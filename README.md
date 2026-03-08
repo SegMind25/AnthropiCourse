@@ -1,124 +1,179 @@
-# 🎓 Anthropic Academy — Free Courses Roadmap
+# Claude Code — Complete Course Notes
 
-> **All courses are 100% free, self-paced, and award a certificate on completion.**
-> 🔗 Platform: [anthropic.skilljar.com](https://anthropic.skilljar.com) — sign up with just an email.
-
----
-
-## 📌 What is Anthropic Academy?
-
-Anthropic Academy is Anthropic's official free online learning platform, launched in March 2026. It offers **13 self-paced courses** covering the full Claude ecosystem — from beginner AI basics to advanced production-level developer integrations. No paid subscription required.
+> A concise reference covering all key concepts from the Claude Code video course.
 
 ---
 
-## 🗺️ Learning Roadmap
+## 1. 🤖 What is a Coding Assistant?
 
-The curriculum is organized into **3 core tracks**:
+A coding assistant uses a language model to write code and complete dev tasks. Since LLMs only process text, they rely on a **tool use system** to interact with files, run commands, and access external systems.
 
----
-
-### 🟢 Track 1 — AI Fluency (Beginner)
-*For anyone new to AI who wants practical, everyday skills.*
-
-| # | Course | Who It's For |
-|---|--------|--------------|
-| 1 | **Claude 101** | Everyone — covers Claude's core features and everyday tasks |
-| 2 | **AI Fluency for Students** | Students — learning, career planning, and responsible AI use |
-| 3 | **AI Fluency for Educators** | Faculty & instructional designers — teaching AI in the classroom |
-| 4 | **AI Fluency for Nonprofits** | Nonprofit professionals — increasing organizational impact with AI |
-
-> 🎓 Co-developed with professors from **Ringling College** and **University College Cork**, released under **Creative Commons**. Advisory board chaired by former Yale president **Rick Levin**.
-
----
-
-### 🔵 Track 2 — Product Training (Intermediate)
-*For professionals using Claude in real workflows.*
-
-| # | Course | Who It's For |
-|---|--------|--------------|
-| 5 | **Claude Code in Action** | Developers — accelerating real coding workflows with Claude Code CLI |
-| 6 | **Claude Code: Agent Skills** | Developers — building, configuring, and sharing reusable Skills in Claude Code |
-
----
-
-### 🟣 Track 3 — Developer Deep-Dives (Advanced)
-*For engineers building on the Claude API and MCP.*
-
-| # | Course | Who It's For |
-|---|--------|--------------|
-| 7 | **Claude API Development** | Developers — authentication, prompting, streaming, and safe production use |
-| 8 | **Intro to MCP** | Engineers — building MCP servers and clients from scratch using Python |
-| 9 | **Advanced MCP** | Engineers — sampling, notifications, file system access, production patterns |
-| 10 | **Claude on AWS Bedrock** | Cloud engineers — full Claude deployment on Amazon Web Services |
-| 11 | **Claude on Google Vertex AI** | Cloud engineers — full Claude deployment on Google Cloud |
-
----
-
-## 🧑‍💻 GitHub Open-Source Courses (Jupyter Notebooks)
-
-Separate from the Academy platform, Anthropic maintains a free open-source course repo on GitHub with hands-on coding tutorials:
-
-🔗 [github.com/anthropics/courses](https://github.com/anthropics/courses)
-
-| # | Course | Description |
-|---|--------|-------------|
-| 1 | **Anthropic API Fundamentals** | API keys, model parameters, multimodal prompts, streaming |
-| 2 | **Prompt Engineering Interactive Tutorial** | Step-by-step prompting techniques *(also on AWS Workshop)* |
-| 3 | **Real World Prompting** | Complex production prompts *(also on Google Vertex)* |
-| 4 | **Prompt Evaluations** | Measuring and improving prompt quality in production |
-| 5 | **Tool Use** | Implementing tool use / function calling with Claude |
-
-> 💡 These are more technical and designed for developers who prefer running code locally over watching lectures.
-
----
-
-## 🚀 Suggested Learning Path
-
+**Flow:**
 ```
-START HERE
-    │
-    ▼
-[Beginner]  Claude 101
-    │
-    ├──► [Non-Developer]  AI Fluency for Students / Educators / Nonprofits
-    │
-    ▼
-[Intermediate]  Claude Code in Action → Agent Skills
-    │
-    ▼
-[Developer]  Claude API Development (Skilljar)
-    │            +  API Fundamentals (GitHub Notebooks)
-    │
-    ▼
-[Advanced]  Intro to MCP → Advanced MCP
-    │
-    ├──► Cloud: AWS Bedrock Course
-    └──► Cloud: Google Vertex AI Course
+Task → LLM gathers context → Formulates plan → Takes action → Returns result
+```
+
+Claude's advantage: superior tool use capabilities, extensible architecture, and better security (direct code search vs. external indexing).
+
+---
+
+## 2. ⚡ Claude Code in Action
+
+Claude Code ships with default tools (file read/write, command execution) and supports extension via MCP servers.
+
+| Demo | Result |
+|------|--------|
+| Chalk JS optimization | 3.9x throughput improvement |
+| Churn analysis (CSV) | Iterative Jupyter notebook analysis |
+| UI styling (Playwright) | Automated visual iteration |
+| GitHub PR review | Auto-detected PII exposure in AWS infrastructure |
+
+---
+
+## 3. 📂 Adding Context
+
+| Tool | Purpose |
+|------|---------|
+| `/init` | Scans codebase, creates `CLAUDE.md` |
+| `@filename` | Inject specific file into request |
+| `#` shortcut | Edit `CLAUDE.md` with natural language |
+
+**Three `CLAUDE.md` levels:** Project (shared) → Local (personal) → Machine (global)
+
+> ✅ Always reference critical files (e.g. DB schemas) in `CLAUDE.md` for consistent context.
+
+---
+
+## 4. 🔧 Making Changes
+
+- **Screenshots** → paste with `Ctrl+V` to show Claude exactly what to change
+- **Plan Mode** → `Shift + Tab` twice — broad codebase research before acting
+- **Thinking Mode** → say `ultrathink` — deep reasoning for complex logic
+- **Git** → Claude can stage, commit, and write descriptive commit messages
+
+---
+
+## 5. 🎛️ Controlling Context
+
+| Technique | How | When |
+|-----------|-----|------|
+| Interrupt | `Escape` | Claude going in wrong direction |
+| Fix repeated errors | `Escape` → `#` memory | Same mistake across sessions |
+| Rewind | `Escape` × 2 | Skip irrelevant history |
+| Summarize | `/compact` | Long session, related next task |
+| Fresh start | `/clear` | Switching to unrelated task |
+
+---
+
+## 6. ⚙️ Custom Commands
+
+- Location: `.claude/commands/your-command.md`
+- Filename = command name (`audit.md` → `/audit`)
+- Use `$ARGUMENTS` placeholder for dynamic input
+- Restart Claude Code after creating new commands
+
+---
+
+## 7. 🌐 MCP Servers
+
+Extend Claude with external tools running locally or remotely.
+
+```bash
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+Auto-approve permissions in `.claude/settings.local.json`:
+```json
+{ "permissions": { "allow": ["mcp__playwright"] } }
 ```
 
 ---
 
-## ✅ Key Facts
+## 8. 🐙 GitHub Integration
 
-| Feature | Details |
-|---------|---------|
-| 💰 Cost | **Free** — no paywall, no subscription needed |
-| 🎓 Certificates | Yes — awarded on course completion |
-| ⏱️ Format | Self-paced, online |
-| 🖥️ Platform | [anthropic.skilljar.com](https://anthropic.skilljar.com) |
-| 📓 GitHub | [github.com/anthropics/courses](https://github.com/anthropics/courses) |
-| 📅 Launched | March 2026 |
-| 🔢 Total Courses | 13 (Skilljar) + 5 (GitHub notebooks) |
+Setup: run `/install-github-app` → merges PR with two default Actions:
 
----
+| Action | Trigger | What Claude does |
+|--------|---------|-----------------|
+| Mention | `@claude` in issue/PR | Plans + executes task |
+| PR Review | New pull request | Reviews + posts detailed report |
 
-## 🔗 Quick Links
-
-- 🌐 **Academy Platform:** https://anthropic.skilljar.com
-- 📖 **API Docs:** https://docs.anthropic.com
-- 💻 **GitHub Courses:** https://github.com/anthropics/courses
-- 🤖 **Claude:** https://claude.ai
+> ⚠️ In GitHub Actions, all tool permissions must be listed explicitly.
 
 ---
 
-*Last updated: March 2026*
+## 9. 🪝 Introducing Hooks
+
+Hooks run custom commands before or after Claude uses a tool.
+
+| Type | Timing | Can block? |
+|------|--------|------------|
+| `PreToolUse` | Before tool runs | ✅ Yes |
+| `PostToolUse` | After tool runs | ❌ No |
+
+Config locations: `~/.claude/settings.json` (global) · `.claude/settings.json` (project) · `.claude/settings.local.json` (personal)
+
+---
+
+## 10. 🔩 Defining Hooks
+
+Hook command receives JSON via **stdin**:
+```json
+{
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Read",
+  "tool_input": { "file_path": "/code/.env" }
+}
+```
+
+| Exit Code | Meaning |
+|-----------|---------|
+| `0` | Allow |
+| `2` | Block (PreToolUse only) — stderr sent to Claude as feedback |
+
+---
+
+## 11. 🛠️ Implementing a Hook
+
+Example — block `.env` file access:
+
+```json
+"PreToolUse": [{
+  "matcher": "Read|Grep",
+  "hooks": [{ "type": "command", "command": "node ./hooks/read_hook.js" }]
+}]
+```
+
+```js
+// read_hook.js
+const input = JSON.parse(data);
+if (input.tool_input?.file_path?.includes(".env")) {
+  console.error("Blocked: .env access is not allowed.");
+  process.exit(2);
+}
+```
+
+> ⚠️ Restart Claude Code after any hook changes.
+
+---
+
+## 12. 💡 Useful Hooks
+
+**TypeScript Type Checker** (PostToolUse)
+- Runs `tsc --no-emit` after file edits
+- Feeds type errors back to Claude for auto-fix
+
+**Duplicate Code Prevention** (PostToolUse)
+- Watches a critical directory (e.g. `queries/`)
+- Launches a secondary Claude instance to detect duplicates
+- Exits with code `2` + feedback if duplicate found
+
+---
+
+## 13. 📦 Claude Code SDK
+
+Programmatic interface via CLI, TypeScript, or Python — same tools as the terminal version.
+
+- **Default:** read-only permissions
+- **Write access:** enable via `options.allowedTools` or settings file
+- **Best for:** hooks, helper scripts, and pipelines — not standalone use
