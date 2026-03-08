@@ -9,10 +9,10 @@ AI-powered React component generator with live preview.
 
 ## Setup
 
-1. **Optional** Edit `.env` and add your Anthropic API key:
+1. **Optional** Edit `.env` and add your Google Gemini API key:
 
 ```
-ANTHROPIC_API_KEY=your-api-key-here
+GEMINI_API_KEY=your-api-key-here
 ```
 
 The project will run without an API key. Rather than using a LLM to generate components, static code will be returned instead.
@@ -49,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Features
 
-- AI-powered component generation using Claude
+- AI-powered component generation using Google Gemini
 - Live preview with hot reload
 - Virtual file system (no files written to disk)
 - Syntax highlighting and code editor
@@ -63,5 +63,5 @@ Open [http://localhost:3000](http://localhost:3000)
 - TypeScript
 - Tailwind CSS v4
 - Prisma with SQLite
-- Anthropic Claude AI
+- Google Gemini AI
 - Vercel AI SDK

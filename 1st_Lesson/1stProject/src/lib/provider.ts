@@ -1,11 +1,11 @@
-import { anthropic } from "@ai-sdk/anthropic";
+import { OpenRouterLanguageModel } from "./openrouter-provider";
 import {
   LanguageModelV1,
   LanguageModelV1StreamPart,
   LanguageModelV1Message,
 } from "@ai-sdk/provider";
 
-const MODEL = "claude-haiku-4-5";
+const MODEL = process.env.OPENROUTER_MODEL || "stepfun/step-3.5-flash:free";
 
 export class MockLanguageModel implements LanguageModelV1 {
   readonly specificationVersion = "v1" as const;
@@ -139,7 +139,7 @@ export class MockLanguageModel implements LanguageModelV1 {
 
     // Step 3: Create App.jsx
     if (toolMessageCount === 0) {
-      const text = `This is a static response. You can place an Anthropic API key in the .env file to use the Anthropic API for component generation. Let me create an App.jsx file to display the component.`;
+      const text = `This is a static response. You can place a Gemini API key in the .env file to use the Google Gemini API for component generation. Let me create an App.jsx file to display the component.`;
       for (const char of text) {
         yield { type: "text-delta", textDelta: char };
         await this.delay(15);
@@ -507,12 +507,12 @@ export default function App() {
 }
 
 export function getLanguageModel() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
 
-  if (!apiKey || apiKey.trim() === "") {
-    console.log("No ANTHROPIC_API_KEY found, using mock provider");
-    return new MockLanguageModel("mock-claude-sonnet-4-0");
+  if (!apiKey || apiKey.trim() === "" || apiKey === "your_api_key_here") {
+    console.log("No OPENROUTER_API_KEY found, using mock provider");
+    return new MockLanguageModel("mock-openrouter");
   }
 
-  return anthropic(MODEL);
+  return new OpenRouterLanguageModel(MODEL);
 }
