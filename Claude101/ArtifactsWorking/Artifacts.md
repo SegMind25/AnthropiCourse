@@ -110,8 +110,6 @@ Talk to Claude **naturally, concisely, and conversationally** — like messaging
 
 ![Code Mode](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69a8c30634a6c3e545269794_69a8a455caa28723041a6ee1_699e1b736d83c9fb55a56d2a_698be3342261cf694fdae301_698bdd78a6031117e6bb41d6_Screenshot%25252525202026-02-09%2525252520at%252525252012.52.07%25252525E2%2525252580%25252525AFPM.png)
 
-**3 Interaction Modes:**
-
 | Mode | What It Does |
 |------|-------------|
 | 🔍 **Ask** | Claude proposes every change — you approve before anything is modified |
@@ -134,15 +132,11 @@ Talk to Claude **naturally, concisely, and conversationally** — like messaging
 
 ### 🤔 When Should I Create a Project?
 
-Create a project when your work has:
-
 | Signal | Example |
 |---|---|
 | 📄 **Repeated reference materials** | Brand guidelines, meeting notes, reports |
 | 📋 **Consistent requirements** | Always cite sources, always use our template |
 | 👥 **Team collaboration needs** | Multiple people need the same shared context |
-
----
 
 ### 🚀 How to Create Your First Project — 3 Steps
 
@@ -153,9 +147,6 @@ Create a project when your work has:
 4. Choose visibility: **Private** or **Share with organization**
 
 **Step 2: Write Project Instructions**
-Tell Claude how to behave in every conversation inside this project.
-
-Good instructions include:
 ```
 ✅ Context    → "This project is for B2B software marketing content."
 ✅ Process    → "First draft a structure, then write the full piece."
@@ -164,33 +155,23 @@ Good instructions include:
 ```
 
 **Step 3: Build Your Knowledge Base**
-Upload documents Claude should always reference:
 - 📘 Brand guidelines & style guides
 - 📊 Research reports & meeting notes
 - 📝 Templates & examples of work you want Claude to emulate
 - 🔧 Technical docs & specifications
 
-> 💡 **Pro Tip:** Name files descriptively! `Q4-2024-Brand-Guidelines.pdf` helps Claude find the right info — `document1.pdf` doesn't.
-
----
+> 💡 **Pro Tip:** Name files descriptively! `Q4-2024-Brand-Guidelines.pdf` helps Claude — `document1.pdf` doesn't.
 
 ### 🧠 How Projects Handle Large Knowledge Bases (RAG)
-
-When you upload a LOT of content, Projects use **RAG (Retrieval Augmented Generation)**:
 
 ```
 Normal Mode  →  Claude loads ALL project content into memory
 RAG Mode     →  Claude intelligently retrieves ONLY what's relevant
 ```
-
 - 🔼 Expands project capacity by up to **10x**
-- ✅ Response quality stays the same
 - 👁️ A visual indicator appears when RAG is enabled
 
----
-
 ### 👥 Collaboration & Permission Levels
-
 *(Available on Claude for Work — Team & Enterprise plans)*
 
 | Permission | What They Can Do |
@@ -199,26 +180,75 @@ RAG Mode     →  Claude intelligently retrieves ONLY what's relevant
 | ✏️ **Can Edit** | Modify instructions, update knowledge, manage members |
 | 👑 **Owner** | Full control — including who can see the project |
 
----
-
 ### 💡 Example Projects to Inspire You
 
 | Project | What to Upload | How Claude Helps |
 |---|---|---|
 | 🚀 **Product Launch** | Specs, competitive analysis, messaging notes | Draft content with full context |
-| 🔬 **Research Hub** | User research, customer feedback, competitive review | Synthesize sources, draft reports |
-| 👔 **Client Account** | Brand guidelines, past deliverables, comms history | Match their tone in every deliverable |
+| 🔬 **Research Hub** | User research, customer feedback, reviews | Synthesize sources, draft reports |
+| 👔 **Client Account** | Brand guidelines, past deliverables | Match their tone in every deliverable |
 | 🎪 **Event Planning** | Venue contracts, speaker bios, attendee data | Generate run-of-show docs & comms |
-| 📋 **Job Descriptions** | Past JDs, team charters, headcount docs | Draft JDs that reflect real team culture |
+| 📋 **Job Descriptions** | Past JDs, team charters, headcount docs | Draft JDs that reflect real culture |
 
 ---
 
-### ✅ Best Practices for Projects
+## 🎨 Lesson 5 — Creating with Artifacts
 
-- **Start focused** — one specific use case, then expand
-- **Keep files current** — outdated docs = outdated responses
-- **Write clear instructions** — vague instructions = inconsistent results
-- **Reference files by name** → *"Based on our Q3 report, what were the top concerns?"*
+### What is an Artifact?
+> An **Artifact** is a standalone, interactive output that Claude creates in a **dedicated window** next to your chat — rendered and ready to use immediately, not buried in the conversation.
+
+### 🤖 When Does Claude Automatically Create an Artifact?
+
+| Condition | Example |
+|---|---|
+| ✅ **Significant & self-contained** (15+ lines) | A full web page, not a one-liner |
+| ✅ **Something you'll edit or reuse** | A template, a dashboard, a report |
+| ✅ **Complex content that stands alone** | A React app, a diagram |
+| ✅ **Something you'll reference later** | A project brief, a flowchart |
+
+> 💡 If Claude doesn't create one automatically, just say: **"Create this as an artifact"**
+
+### 🗂️ Types of Artifacts Claude Can Create
+
+| Type | Best For | Example |
+|---|---|---|
+| 📄 **Documents** | Reports, notes, blog posts, templates | Meeting notes, project plans |
+| 💻 **Code Snippets** | Any programming language | Python scripts, JS functions |
+| 🌐 **HTML Pages** | Web pages & prototypes | Landing pages, forms, demos |
+| 🖼️ **SVG Images** | Logos, icons, illustrations | Custom graphics that scale perfectly |
+| 📊 **Mermaid Diagrams** | Flowcharts, org charts, Gantt charts | Customer onboarding flow |
+| ⚛️ **React Components** | Interactive UI with real logic | Calculators, dashboards, games |
+
+### 🚀 Example Prompts for Artifacts
+
+```
+"Create a flowchart showing our customer onboarding process"
+"Build an interactive dashboard for monthly expense tracking"
+"Design a landing page for a productivity app"
+"Write a project brief template I can reuse"
+```
+
+### 📤 Sharing & Publishing Artifacts
+
+| Option | Who It's For | How It Works |
+|---|---|---|
+| 📋 **Copy / Download** | Personal use | Buttons in the artifact window |
+| 🏢 **Share within org** | Team & Enterprise users | Internal only, requires team login |
+| 🌍 **Publish publicly** | Free, Pro & Max users | Anyone with the link can view & remix |
+
+**When published:**
+- ✅ Only selected version is public — your chat stays private
+- ✅ Others can **"remix"** it in their own Claude
+- ✅ You can **unpublish** at any time
+
+### 💡 Tips for the Best Artifacts
+
+**❌ Vague:** `"Build a budget tracker"`  
+**✅ Specific:** `"Build a monthly budget tracker with expense categories, a pie chart, and an over-budget warning"`
+
+- 👤 Describe the end user — it changes Claude's design choices
+- 🔁 Iterate one feature at a time
+- 🗣️ Say *"Please create that as an artifact"* if Claude replies in chat instead
 
 ---
 
@@ -231,11 +261,11 @@ RAG Mode     →  Claude intelligently retrieves ONLY what's relevant
 - [x] Verify important facts — Claude can sometimes be wrong
 - [x] Chat = conversations, Cowork = deep work, Code = software
 - [x] Projects = dedicated workspaces with memory & knowledge bases
-- [x] Good project instructions save time on every single conversation
-- [ ] Run evals on my own recurring tasks
+- [x] Good project instructions save time on every conversation
 - [x] Artifacts = live, interactive outputs in a dedicated window
 - [x] React artifacts have real logic — not just mockups
 - [x] Published artifacts can be remixed by anyone
+- [ ] Run evals on my own recurring tasks
 - [ ] Create my first real Project for an ongoing workflow
 - [ ] Try the Quick Entry shortcut (double-tap Option)
 
@@ -250,108 +280,3 @@ RAG Mode     →  Claude intelligently retrieves ONLY what's relevant
 ---
 
 *© Course content by Anthropic. Notes and reflections are my own.*
-
----
-
-## 🎨 Lesson 5 — Creating with Artifacts
-
-### What is an Artifact?
-> An **Artifact** is a standalone, interactive output that Claude creates in a **dedicated window** next to your chat — rendered and ready to use immediately, not buried in the conversation.
-
-Instead of getting a wall of code or text in the chat, you see it **live and working** on the right side of your screen.
-
----
-
-### 🤖 When Does Claude Automatically Create an Artifact?
-
-Claude creates an artifact when the content is:
-
-| Condition | Example |
-|---|---|
-| ✅ **Significant & self-contained** (15+ lines) | A full web page, not a one-liner |
-| ✅ **Something you'll edit or reuse** | A template, a dashboard, a report |
-| ✅ **Complex content that stands alone** | A React app, a diagram |
-| ✅ **Something you'll reference later** | A project brief, a flowchart |
-
-> 💡 If Claude doesn't create one automatically, just say: **"Create this as an artifact"**
-
----
-
-### 🗂️ Types of Artifacts Claude Can Create
-
-| Type | Best For | Example |
-|---|---|---|
-| 📄 **Documents** | Reports, notes, blog posts, templates | Meeting notes, project plans |
-| 💻 **Code Snippets** | Any programming language | Python scripts, JS functions |
-| 🌐 **HTML Pages** | Web pages & prototypes | Landing pages, forms, demos |
-| 🖼️ **SVG Images** | Logos, icons, illustrations | Custom graphics that scale perfectly |
-| 📊 **Mermaid Diagrams** | Flowcharts, org charts, Gantt charts | Customer onboarding flow |
-| ⚛️ **React Components** | Interactive UI with real logic | Calculators, dashboards, games |
-
----
-
-### 🚀 Creating Your First Artifact — Example Prompts
-
-```
-"Create a flowchart showing our customer onboarding process"
-
-"Build an interactive dashboard where I can input monthly 
- expenses and see a breakdown"
-
-"Design a landing page for a productivity app with a hero 
- section and feature list"
-
-"Write a project brief template I can reuse for new initiatives"
-```
-
----
-
-### 🛠️ What You Can Do With an Artifact
-
-Once Claude creates an artifact, in the artifact window you can:
-
-| Action | How |
-|---|---|
-| 👁️ **Preview it** | Toggle between rendered view and raw code |
-| 📋 **Copy content** | Click the copy icon |
-| 💾 **Download it** | Save as a file to your computer |
-| 🔍 **View the code** | See exactly what Claude generated |
-
----
-
-### 📤 Sharing & Publishing Artifacts
-
-| Option | Who It's For | How It Works |
-|---|---|---|
-| 📋 **Copy / Download** | Personal use | Use the buttons in the artifact window |
-| 🏢 **Share within org** | Team & Enterprise users | Stays internal, requires team login |
-| 🌍 **Publish publicly** | Free, Pro & Max users | Anyone with the link can view & interact |
-
-**When you publish publicly:**
-- ✅ Only the selected version goes public — your chat stays private
-- ✅ No Claude account needed to view it
-- ✅ Others can **"remix"** it — open it in their own Claude to modify it
-- ✅ You can **unpublish** at any time
-
----
-
-### 💡 Tips for Getting the Best Artifacts
-
-**❌ Vague prompt:**
-```
-"Build a budget tracker"
-```
-
-**✅ Specific prompt:**
-```
-"Build a monthly budget tracker where I can input expenses 
-by category, see a pie chart breakdown, and get a warning 
-when I'm over budget"
-```
-
-**Other pro tips:**
-- 👤 **Describe the end user** → *"This flowchart is for new employees"* gives different results than *"...for the engineering team"*
-- 🔁 **Iterate one step at a time** → Add one feature per message to catch issues early
-- 🗣️ **Ask explicitly** → If Claude replies in chat instead of an artifact, say *"Please create that as an artifact"*
-
----
