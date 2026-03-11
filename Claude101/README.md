@@ -35,10 +35,10 @@ AnthropiCourse/Claude101
 ├── 🤝 CollabWithAI/
 │   └── Collab.md                  # Lesson: Introduction to AI Fluency & Collaboration
 │
-├── 🔌 ConnectingURTools/
+├── 🔌 ConnectingTools/
 │   └── ConnectingTools.md         # Lesson: Connecting Your Tools (MCP & Connectors)
 │
-├── 🌐 OtherWayForWorkingWithClaude/
+├── 🌐 OtherWaysOfWorking/
 │   └── OtherWayOfWorking.md       # Lesson: Claude Code, Slack, Excel & Chrome
 │
 ├── 📁 ProjectStartWithAI/
@@ -50,7 +50,7 @@ AnthropiCourse/Claude101
 ├── 💼 RoleUseCase/
 │   └── CaseRole.md                # Lesson: Claude in Action — Use Cases by Role
 │
-├── 🏢 SearchingEntreprise/
+├── 🏢 EnterpriseSearch/
 │   └── Entreprise.md              # Lesson: Enterprise Search
 │
 └── 🛠️  WorkingWithSkills/
@@ -69,11 +69,11 @@ AnthropiCourse/Claude101
 | 04 | `ProjectStartWithAI/` | Introduction to Projects | ✅ Completed |
 | 05 | `ArtifactsWorking/` | Creating with Artifacts | ✅ Completed |
 | 06 | `WorkingWithSkills/` | Working with Skills | ✅ Completed |
-| 07 | `ConnectingURTools/` | Connecting Your Tools | ✅ Completed |
-| 08 | `SearchingEntreprise/` | Enterprise Search | ✅ Completed |
+| 07 | `ConnectingTools/` | Connecting Your Tools | ✅ Completed |
+| 08 | `EnterpriseSearch/` | Enterprise Search | ✅ Completed |
 | 09 | `ResearchDeepMode/` | Research Mode for Deep Dives | ✅ Completed |
 | 10 | `RoleUseCase/` | Claude in Action: Use Cases by Role | ✅ Completed |
-| 11 | `OtherWayForWorkingWithClaude/` | Other Ways to Work with Claude | ✅ Completed |
+| 11 | `OtherWaysOfWorking/` | Other Ways to Work with Claude | ✅ Completed |
 | 12 | `CollabWithAI/` | Introduction to AI Fluency | ✅ Completed |
 | 13 | — | Next Lesson | 🔜 Coming Soon |
 

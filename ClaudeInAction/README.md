@@ -1,4 +1,68 @@
-# Claude Code — Complete Course Notes
+# ⚡ Claude Code in Action — Complete Course Notes
+> **repo:** `AnthropiCourse/ClaudeInAction` · **branch:** `main` · **author:** [@SegMind25](https://github.com/SegMind25)
+
+[![Claude Code](https://img.shields.io/badge/Claude-Code-orange?style=flat-square)](https://claude.ai/code)
+[![Anthropic](https://img.shields.io/badge/Anthropic-Course-blue?style=flat-square)](https://anthropic.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=typescript)](https://typescriptlang.org)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)](#)
+
+---
+
+## 🗂️ Module Structure
+
+```
+ClaudeInAction/
+│
+├── 📄 CodingAssistant/          → What is a coding assistant?
+├── 📄 MakingChanges/            → Screenshots, Plan Mode, Git
+├── 📄 ControllingContext/       → Context management techniques
+├── 📄 CustomCommands/           → Building custom slash commands
+├── 📄 MCP/                      → MCP server setup & integration
+├── 📄 GitHubIntegration/        → GitHub Actions & PR reviews
+├── 📄 Hooks/                    → Introduction to hooks
+├── 📄 DefiningHooks/            → Hook structure & stdin/stdout
+├── 📄 ImplementingHooks/        → Building real hooks
+├── 📄 UsefulHooks/              → TypeScript checker & dupe prevention
+├── 📄 HookSettings/             → Hook configuration & paths
+├── 📄 AllHooks/                 → Complete hooks reference
+├── 📄 ClaudeSDK/                → Claude Code SDK (CLI/TS/Python)
+├── 🏗️  Project_UIGenerator/     → Project 1: UI Generator App (Next.js)
+└── 🏗️  Project_QuerySystem/     → Project 2: E-commerce Query System (TypeScript)
+```
+
+---
+
+## 📚 Course Progress
+
+| # | Module | Topic | Status |
+|---|--------|--------|--------|
+| 01 | `CodingAssistant/` | What is a coding assistant? | ✅ Completed |
+| 02 | `MakingChanges/` | Screenshots, Plan Mode, ultrathink, Git | ✅ Completed |
+| 03 | `ControllingContext/` | Interrupt, rewind, compact, clear | ✅ Completed |
+| 04 | `CustomCommands/` | Slash commands & `$ARGUMENTS` | ✅ Completed |
+| 05 | `MCP/` | MCP servers & auto-approve permissions | ✅ Completed |
+| 06 | `GitHubIntegration/` | GitHub Actions & PR review automation | ✅ Completed |
+| 07 | `Hooks/` | PreToolUse & PostToolUse hooks | ✅ Completed |
+| 08 | `DefiningHooks/` | Hook stdin JSON & exit codes | ✅ Completed |
+| 09 | `ImplementingHooks/` | Building a `.env` blocking hook | ✅ Completed |
+| 10 | `UsefulHooks/` | TypeScript checker & duplicate prevention | ✅ Completed |
+| 11 | `HookSettings/` | Hook config paths & scopes | ✅ Completed |
+| 12 | `AllHooks/` | Full hook reference | ✅ Completed |
+| 13 | `ClaudeSDK/` | Programmatic Claude Code via CLI/TS/Python | ✅ Completed |
+
+---
+
+## 🏗️ Projects Built
+
+| Project | Stack | Description |
+|---------|-------|-------------|
+| [`Project_UIGenerator/`](./Project_UIGenerator/) | Next.js, TypeScript, Prisma | AI-powered UI generator with auth, file system & live preview |
+| [`Project_QuerySystem/`](./Project_QuerySystem/) | TypeScript, Claude SDK | E-commerce query system with hooks for type checking & duplicate prevention |
+
+---
+
+## 📖 Course Notes Reference
 
 > A concise reference covering all key concepts from the Claude Code video course.
 
