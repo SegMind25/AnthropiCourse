@@ -25,19 +25,22 @@ AI Fluency goes beyond prompt tips and tricks. It's a **lasting framework** for 
 AIFluency/
 │
 ├── 📄 Introduction/
-│   ├── IntroductionAIFluency.md       # Framework overview & why it matters
+│   ├── IntroductionAInfluency.md          # Why do we need AI Fluency? + 3 collaboration modes
 │   └── Ressources/
 │       └── AI_Fluency_vocabulary_cheat_sheet.pdf  # Key vocabulary reference
 │
+├── 📄 4DAIFluency/
+│   └── 4D.md                              # The 4D Framework: Automation, Augmentation & Agency
+│
 └── 📄 HowToUseAIFluency/
-    └── UsesAIFluency.md               # Applying the 4D framework in practice
+    └── HowToUseAIFluency.md               # Applying the 4D framework in practice
 ```
 
 ---
 
 ## 🏆 The 4D Framework for AI Fluency
 
-The core of everything in this course:
+The core of everything in this course — developed by **Prof. Rick Dakan** & **Prof. Joseph Feller**:
 
 | Competency | Core Question | What It Covers |
 |---|---|---|
@@ -48,16 +51,27 @@ The core of everything in this course:
 
 ---
 
+## 🤝 Three Ways to Engage with AI
+
+| Mode | Description |
+|---|---|
+| ⚙️ **Automation** | The AI completes specific tasks based on your instructions |
+| 🤝 **Augmentation** | You and AI collaborate as creative thinking and task execution partners |
+| 🧭 **Agency** | You configure AI to work independently on your behalf |
+
+---
+
 ## 📚 Course Progress
 
-| # | Lesson | Topic | Status |
+| # | Folder | Lesson | Status |
 |---|--------|--------|--------|
-| 01 | `Introduction/` | Why AI Fluency? Framework overview | ✅ Completed |
-| 02 | `HowToUseAIFluency/` | Applying the 4D framework | ✅ Completed |
-| 03 | — | Delegation in depth | 🔜 Coming Soon |
-| 04 | — | Description in depth | 🔜 Coming Soon |
-| 05 | — | Discernment in depth | 🔜 Coming Soon |
-| 06 | — | Diligence in depth | 🔜 Coming Soon |
+| 01 | [`Introduction/`](./Introduction/IntroductionAInfluency.md) | Why AI Fluency? + 3 Collaboration Modes | ✅ Completed |
+| 02 | [`4DAIFluency/`](./4DAIFluency/4D.md) | The 4D Framework Deep Dive | ✅ Completed |
+| 03 | [`HowToUseAIFluency/`](./HowToUseAIFluency/HowToUseAIFluency.md) | Applying the 4D Framework in Practice | ✅ Completed |
+| 04 | — | Delegation in Depth | 🔜 Coming Soon |
+| 05 | — | Description in Depth | 🔜 Coming Soon |
+| 06 | — | Discernment in Depth | 🔜 Coming Soon |
+| 07 | — | Diligence in Depth | 🔜 Coming Soon |
 
 ---
 
@@ -84,4 +98,12 @@ The core of everything in this course:
 
 ---
 
-*© AI Fluency Framework by Rick Dakan & Joseph Feller. Course hosted by Anthropic Academy. Notes are my own.*
+## 📜 Acknowledgments & License
+
+Copyright 2025 **Rick Dakan**, **Joseph Feller**, and **Anthropic**.
+Released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+Supported in part by the **Higher Education Authority, Ireland**, through the National Forum for the Enhancement of Teaching and Learning.
+
+---
+
+*Notes and reflections are my own.*
