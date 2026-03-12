@@ -70,12 +70,13 @@ The core of everything in this course — developed by **Prof. Rick Dakan** & **
 |---|--------|--------|--------|
 | 01 | [`Introduction/`](./Introduction/IntroductionAInfluency.md) | Why AI Fluency? + 3 Collaboration Modes | ✅ Completed |
 | 02 | [`4DAIFluency/`](./4DAIFluency/4D.md) | The 4D Framework Deep Dive | ✅ Completed |
-| 03 | [`AIGenerative/`](./AIGenerative/AIGenerative.md) | Generative AI Fundamentals & How LLMs Work | ✅ Completed |
-| 04 | [`HowToUseAIFluency/`](./HowToUseAIFluency/HowToUseAIFluency.md) | Applying the 4D Framework in Practice | ✅ Completed |
-| 05 | — | Delegation in Depth | 🔜 Coming Soon |
-| 06 | — | Description in Depth | 🔜 Coming Soon |
-| 07 | — | Discernment in Depth | 🔜 Coming Soon |
-| 08 | — | Diligence in Depth | 🔜 Coming Soon |
+| 03 | [`AIGenerative/`](./AIGenerative/AIGenerative.md) | Generative AI Fundamentals *(6 min)* | ✅ Completed |
+| 04 | [`AIGenerative/`](./AIGenerative/AIGenerative.md) | Capabilities & Limitations *(7 min)* | ✅ Completed |
+| 05 | [`HowToUseAIFluency/`](./HowToUseAIFluency/HowToUseAIFluency.md) | Applying the 4D Framework in Practice | ✅ Completed |
+| 06 | — | Delegation in Depth | 🔜 Coming Soon |
+| 07 | — | Description in Depth | 🔜 Coming Soon |
+| 08 | — | Discernment in Depth | 🔜 Coming Soon |
+| 09 | — | Diligence in Depth | 🔜 Coming Soon |
 
 ---
 
